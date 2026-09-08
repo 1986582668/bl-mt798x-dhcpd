@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later OR MIT
 // ikuai Q3000 (MT7981B + SPI-NAND, 256MB DDR3) multi-layout u-boot DTS
-// åºäº Yuzhii bl-mt798x-dhcpd uboot-mtk-20250711 ç jcg_q30 éª¨æ¶
-// /mtd-layout å¸å±ä¸å·²å®æµéè¿ç ikuai_q3000 (hanwckf ç³») ä¿æä¸è´
+// 基于 Yuzhii bl-mt798x-dhcpd uboot-mtk-20250711 的 jcg_q30 骨架
+// /mtd-layout 布局与已实测通过的 ikuai_q3000 (hanwckf 系) 保持一致
 
 /dts-v1/;
 #include "mt7981.dtsi"
@@ -139,6 +139,6 @@
 	};
 };
 
-'watchdog {
+&watchdog {
 	status = "disabled";
 };
